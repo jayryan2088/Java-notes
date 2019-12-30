@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document by nana */
+/*banner内容*/
+.ban{width:100%; height: 385px; position: relative;}
+.slideBox{ width:100%; height:385px; overflow:hidden; position:relative;}
+.slideBox:hover .bb{display: block;}
+.slideBox .hd{width:968px; padding-left: 232px; height:15px; overflow:hidden; position:absolute; left:50%; margin-left: -600px; bottom: 40px; z-index:1; text-align: center; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; display: inline-block;}
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:10px; height:10px; line-height:10px; text-align:center; background:#fff; cursor:pointer; opacity: .3;}
+.slideBox .hd ul li.on{color:#fff; width:15px; opacity: .7;}
+.slideBox .bb{bottom:162px; height: 50px; padding-left: 0; margin-left: -365px; display: none; height:0; overflow:visible;}
+.slideBox .bd .li_in{width:968px; padding-left: 232px; height: 385px; margin: 0 auto;}
+.slideBox .bd a{width:968px; height:385px; display: block; overflow:hidden;}
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; width:100%;}
+.slideban .bd img{ width:968px; height:385px; display:block; border: 0;}
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:0; top:50%; margin-top:-50px; display:block; width:32px; height:40px; background:url(../images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5; border-radius:3px; }
+.slideBox .next{ left:auto; right:0; background-position:8px 5px; }
+.slideBox .prev:hover,	
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;}
+.slideBox .prevStop{ display:none;}
+.slideBox .nextStop{ display:none;}
+.slideban .prev,
+.slideban .next{ background-color:#3A394F; padding:10px 0; background-position:-110px 14px;}
+.slideban .next{ background-position:8px 14px; }
+
+/*黑马故事切换*/
+.slide_story{width:500px; height: 232px; margin: 33px 0 0 190px; background: #fff;}
+.slide_story .bd a{width:500px; height:232px; display: block; overflow:hidden;}
+.slide_story .bd img{width:171px; height: 232px; float: left;}
+.slide_story .bd .txt{width:287px; float:left; margin-left:18px;}
+.slide_story .bd .txt h4{font-size: 24px; padding: 25px 10px 15px 10px ; border-bottom: 1px dashed #090723; margin-bottom: 15px;}
+.slide_story .bd .txt p{padding:0 10px; line-height: 26px;}
+.slide_story .bd:hover{background:#F1F1F1;}
+.slide_story .bb{display: block;}
+.slide_story .prev{background: url(../images/left.png) no-repeat; width:30px; height: 60px; margin-top:-30px;}
+.slide_story .next{background: url(../images/right.png) no-repeat; width:30px; height: 60px; margin-top:-30px;}
+
+/*黑马就业薪资*/
+.slide_pay{width:1200px; height: 270px; margin: 0 auto; background: #fff;}
+.slide_pay .bd{width:1135px; height: 270px; margin: 0 auto; overflow: hidden;}
+.slide_pay .bd ul{width:1300px;}
+.slide_pay .bd li{width:202px; float: left; margin-right: 30px;}
+.slide_pay .bd .abig{width:202px; height: 160px; display: block; border-bottom: 1px solid #CBCBCB; overflow:hidden; text-align: center;}
+.slide_pay .bd .abig:hover span{color: #D72502;}
+.slide_pay .bd .iconbox{height:70px; overflow: hidden; margin: 30px auto 15px 20px;display: flex;align-items: center;}
+.slide_pay .bd .iconbox img{float:left; width: auto; height: auto; display: inline-block;align-items: center;}
+.slide_pay .bd .iconbox span{float:left; font-size: 16px; padding: 0 0 0 20px;}
+.slide_pay .bd .iconbox span.span_l{padding-top: 1px;}
+.slide_pay .bd .text{overflow: hidden;}
+.slide_pay .bd .text span{display: inline-block; margin-top: 5px; float: left; line-height: 26px; background: #F1F1F1; color: #565656; font-size: 16px;padding: 0 3px;}
+.slide_pay .bd .text strong{font-size: 24px; float: right; color: #D72502;}
+.slide_pay .bd .alist{padding-top: 15px;}
+.slide_pay .bd .alist a{width:auto; height: auto; font-size: 12px; line-height: 22px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.slide_pay .bd .alist a:hover{color: #D72502;}
+.slide_pay .bd .alist a span{color:#D72502;}
+.slide_pay .bb{display: none;}
+.slide_pay:hover .bb{display: block;}
+.slide_pay .prev{background: url(../images/left.png) no-repeat; width:30px; height: 60px;}
+.slide_pay .next{background: url(../images/right.png) no-repeat; width:30px; height: 60px;}
+
+/*课程大纲课程项目*/
+.slide_xm{width:1200px; height: 400px; background: #fff;}
+.slide_xm .bd{overflow: hidden;}
+.slide_xm .bd img{width:600px; height: 400px; float: left;}
+.slide_xm .bd .txt{width:540px; height: 400px; float:left; padding:0 30px; overflow: auto;}
+.slide_xm .bd .txt h4{font-size: 28px; padding: 26px 12px 0 0; display: block;}
+.slide_xm .bd .txt .phd{padding-bottom: 11px; border-bottom:1px solid #333; margin:20px 0 8px 0;} 
+.slide_xm .bd .txt .phd p{font-size: 20px; height: 20px; line-height: 20px; border-left:3px solid #D72403; padding-left: 7px;}
+.slide_xm .bd .txt p{line-height: 22px;}
+.slide_xm .prev{background: url(../images/left.png) no-repeat; width:30px; height: 60px;}
+.slide_xm .next{background: url(../images/right.png) no-repeat; width:30px; height: 60px;}
+
+/*分校页面banner*/
+.slide_school .bd .li_in{padding-left: 0; padding-right: 232px;}
+.slide_school .hd{padding-left: 0; padding-right: 232px;}
+.slide_school .bb{padding-right: 0; margin-left: -600px;}
+
+/*通用右侧幻灯*/
+.slide_global{width:300px; height: 230px;}
+.slide_global .bd img{width:300px; height: 230px;}

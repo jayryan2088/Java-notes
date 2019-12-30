@@ -1,0 +1,46 @@
+/* css by nana */
+/*专题通用头部样式*/
+.head_box{width:100%; height: 60px; background:#fff}
+.head_box .inner{width:1200px; margin: 0 auto; overflow: hidden;}
+.head_box h1{float: left; width:138px; margin-top: 11px;}
+.head_box h1 img{width:138px;}
+.head_box ul{float: right;}
+.head_box ul li{float: left;}
+.head_box ul li.first{font-size: 18px; display:inline-block; padding:0 10px; height: 60px; background: #b81d00; color: #fff; text-align: center; margin-right: 35px;}
+.head_box ul li{line-height:60px;}
+.head_box ul li a{ padding:0 10px; border-right:1px solid #E0E0E0; font-size:14px; color:#333;}
+.head_box ul li a:hover{color: #D72403;}
+.head_box ul li.last a{border-right:0;}
+
+/* 开班通用样式 E*/
+.kb_box .kb .ulbox{ width:895px; height:188px; float:left; overflow:hidden;}
+.kb_box .kb .ulbox ul{ width:1000px;}
+.kb_box .kb .ulbox li{ width:415px; margin:0 60px 20px 0; height:31px; float:left; line-height:31px; border-bottom:1px solid #ccc; position:relative;}
+.kb_box .kb .ulbox li h3{ background: #E01D09; width:48px; font-size:12px; color:#fff; text-align:center; line-height:25px; position:absolute; left:0; top:6px;}
+.kb_box .kb .ulbox li p{  width:80px; float:left; text-align:center; line-height:31px; font-size:14px;}
+.kb_box .kb .ulbox li p a{ font-size:15px; color:#E01D09;}
+.kb_box .kb .ulbox li p.p1{ width:195px; padding-left: 48px;}
+.kb_box .kb .ulbox li p.p2{width:75px; background:url(../images/school/hot1.gif) no-repeat 5px 4px; padding-left:16px; float:right;}
+.kb_box .kb .ulbox li p a:hover{color: #D72502;}
+/* 开班通用样式 E */
+/* 专题页面开班补充 */
+.citybox{width:286px; float: left; overflow: hidden; margin: 35px 25px 35px 35px;}
+.citybox p{font-size: 22px; margin-bottom: 20px; text-align: center;}
+.citybox p span{font-size:14px; line-height: 18px; color: #D72502; display: inline-block;}
+.citybox p .span1{margin-right: 15px;}
+.citybox p .span2{margin-left: 15px;}
+.citybox .mytab{width:320px;}
+.citybox .mytab a{float: left; width:67px; height: 23px; line-height: 23px; text-align: center; background: #1E364E; color: #fff; margin: 0 5px 10px 0; border-radius: 3px; font-size:14px;}
+.citybox .mytab a.now{background: #D72502}
+.citybox .mytab a.no{background: #d1d1d1; color: #333;}
+.kb_box{float: right; width:854px; overflow:hidden;}
+.kb_box .kb{display: none;}
+.kb_box .mycur{display: block;}
+.kb_subject{width:1200px; margin:0 auto; overflow:hidden;}
+.kb_subject .kb_box{margin-top:45px; width:870px;}
+.kb_subject .kb_box .kb .ulbox li{margin-right:40px;}
+.kb_subject .citybox{margin-left:0;}
+/* 学院页面开班补充 */
+.kbbox .kb_box .kb .ulbox li{margin-right:20px; width:405px;}
+.kbbox .kb_box{margin-top:30px;}
+.kbbox .kb .ulbox{width:854px;}

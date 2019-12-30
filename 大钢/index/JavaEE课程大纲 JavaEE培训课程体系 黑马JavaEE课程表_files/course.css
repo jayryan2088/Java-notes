@@ -1,0 +1,103 @@
+/* css by nana */
+/*专题通用头部样式*/
+.head_box{width:100%; height: 60px;}
+.head_box .inner{width:1200px; margin: 0 auto; overflow: hidden;}
+.head_box h1{float: left; width:138px; margin-top: 11px;}
+.head_box h1 img{width:138px;}
+.head_box ul{float: right;}
+.head_box ul li{float: left;}
+.head_box ul li.first{font-size: 18px; display:inline-block; padding:0 10px; height: 60px; background: #D72403; color: #fff; text-align: center; margin-right: 35px;}
+.head_box ul li{line-height:60px;}
+.head_box ul li a{ padding:0 10px; border-right:1px solid #E0E0E0;}
+.head_box ul li a:hover{color: #D72403;}
+.head_box ul li.last a{border-right:0;}
+
+/*课程大纲banner*/
+.course_ban{height: 320px; background: url(../images/course_dg/javacourse_bg.jpg) no-repeat center top;}
+.course_ban .inner{width:1200px; margin: 0 auto; text-align: center; overflow: hidden;}
+.course_ban .inner h2{font-size: 50px; color: #31D6D4; line-height: 100px; border-bottom: 2px solid #31D6D4; display: inline-block; margin-top: 60px; font-weight: bold;}
+.course_ban .inner p{font-size: 24px; color: #fff; margin-top: 30px;}
+.course_ban .inner p a{background: #31D6D4; line-height: 37px; padding:0 25px; display: inline-block; color: #fff; border-radius: 5px;}
+.course_ban .inner p a:hover{background: #1fbfbd;}
+
+/*课程设计理念*/
+.lay{width:100%; padding: 55px 0;}
+.lay .inner{width:1200px; margin: 0 auto; overflow: hidden;}
+.lay .hd{height: 70px; background: url(../images/course_dg/course_hd.png) no-repeat center center; font-size: 32px; text-align: center; line-height: 70px; margin-bottom: 45px;}
+.lay_lj{background: #F4F4F4;}
+.lay_lj ul{margin-left: 43px; border-left: 3px solid #D72403;}
+.lay_lj ul li{position: relative; padding-left: 70px; margin-bottom: 10px;}
+.lay_lj ul li .dot{display: block; width:22px; height: 22px; background: #D72403; position: absolute; left: -16px; top:50%; margin-top: -12px; border-radius: 50%; border:3px solid #F4F4F4;}
+.lay_lj ul li .txt{background: #fff; padding:25px 40px; border-radius: 7px; position: relative;}
+.lay_lj ul li .txt:before{content: ''; position: absolute; top: 50%; margin-top: -10px; left: -20px; width: 0; height: 0; border-right: 20px solid #fff; border-top: 10px solid transparent; border-bottom: 10px solid transparent; }
+.lay_lj ul li .txt h3{color: #D72403; font-size: 24px; padding-bottom: 10px; position: relative; top:0;}
+.lay_lj ul li .txt p{line-height: 20px; position: relative; top:0;}
+.lay_lj ul li .txt:hover h3,.lay_lj ul li .txt:hover p{top:-5px;}
+
+/*课程大纲*/
+.lay_con table{color:#666; border-color:#666;width: 1200px;}
+.lay_con table td{font-size:15px; line-height:24px;}
+.lay_dg .gdhd .box{width:100%; overflow: hidden; margin-bottom: 5px;}
+.lay_dg .gdhd span{float:left; width:140px; font-size: 18px; background: #D72403; line-height: 28px; color:#fff; text-align: center; height: 28px;}
+.lay_dg .gdhd p{float:right; width:1030px; font-size: 16px; line-height: 26px;}
+.lay_dg .gdhd .tips{font-size: 14px;}
+.lay_jydg{padding-top: 0;}
+
+/*通用咨询*/
+.lay_zx {padding: 0;}
+.lay_zx .inner{width:1020px; border:2px solid #49D2CC}
+.lay_zx .zx_l{float: left; display: block; width:510px; height: 195px; background: #49D2CC; color: #fff; text-align: center; font-size: 26px; overflow: hidden;}
+.lay_zx .zx_l p{padding:50px 0 30px;}
+.lay_zx .zx_l p strong{font-size: 26px;}
+.lay_zx .zx_l span{display: block; width:245px; height: 46px; line-height: 46px; text-align: center; background: #fff; font-size: 20px; color: #333; margin: 0 auto; border-radius: 7px;}
+.lay_zx .zx_l:hover{background: #1eb1af;}
+.lay_zx .zx_l:hover strong{color: #fff;}
+.lay_zx .zx_r{background: #fff;}
+.lay_zx .zx_r p strong{color: #49D2CC;}
+.lay_zx .zx_r span{background: #49D2CC;}
+/*项目介绍*/
+.lay_js{background: #F4F4F4;}
+.lay_js .lay_con{border-radius:7px; overflow:hidden;}
+
+/*视频试听*/
+.zhe_bg{width:100%; height: 100%; background: #000; opacity: .6; position: absolute; left: 0; top:0; z-index: 99; display: none;}
+.videobox{position: fixed; left:50%; top:50%; margin-left: -350px; margin-top: -250px; z-index: 100;}
+.videobox ul li{display: none;}
+.lay_video .lay_con ul{width:1250px; overflow: hidden;}
+.lay_video .lay_con ul li{float:left; width:390px; margin:0 15px 20px 0; overflow:hidden;}
+.lay_video .lay_con ul li a{display:block; width:390px; height:220px; border-radius:7px; overflow:hidden; position:relative;}
+.lay_video .lay_con ul li .zhe{width:390px; height:220px; position:absolute; left:0; top:0; background:#333; opacity:0; filter:alpha(opacity=0);}
+.lay_video .lay_con ul li .star{width:75px; height:75px; position:absolute; left:50%; margin-left:-37px; top:-75px; background:url(../images/course_dg/video_s.png) no-repeat;}
+.lay_video .lay_con ul li:hover .zhe{opacity:0.3; filter:alpha(opacity=30);}
+.lay_video .lay_con ul li:hover .star{top:75px;}
+.lay_video .lay_con ul li .span{position: absolute;width:320px;height:160px;left:35px; top:30px;overflow:hidden;}
+.lay_video .lay_con ul li .span span{display:inline-block;background:#fff;position: absolute;width:100%;transition: 0.3s;-webkit-transition: 0.3s;
+ -moz-transition: 0.3; -ms-transition: 0.3s;}
+.lay_video .lay_con ul li .span span:nth-child(1){width:2px;height:0px;bottom:0;left:0;}
+.lay_video .lay_con ul li .span span:nth-child(2){width:0px;height:2px;top:0;left:0;}
+.lay_video .lay_con ul li .span span:nth-child(3){width:2px;height:0px;top:0;right:0;}
+.lay_video .lay_con ul li .span span:nth-child(4){width:0px;height:2px;bottom:0;right:0;}
+.lay_video .lay_con ul li a:hover .span span:nth-child(1){height:160px;}
+.lay_video .lay_con ul li a:hover .span span:nth-child(2){width:320px;}
+.lay_video .lay_con ul li a:hover .span span:nth-child(3){height:160px;}
+.lay_video .lay_con ul li a:hover .span span:nth-child(4){width:320px;}
+.lay_video .lay_con ul .bdtxt{width:390px; font-size: 17px; text-align: center; line-height: 60px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.lay_video .a_st{display: block; margin: 0 auto; width:524px; height: 94px; line-height: 94px; font-size: 32px; color: #fff; text-align: center; background: #49D2CC; border-radius: 7px;}
+.lay_video .a_st:hover{background: #1FBFBD;}
+
+/*教学服务*/
+.lay_service{background: #F4F4F4;}
+.lay_service ul{width:1250px; overflow: hidden;}
+.lay_service ul li{float:left; width:390px; height:220px; margin: 0 15px 15px 0; overflow: hidden; border-radius:7px;}
+.lay_service ul li .front{background: #CCC9C4;width:390px; height:220px; overflow: hidden;}
+.lay_service ul li.li2 .front{background: #B593DF;}
+.lay_service ul li.li3 .front{background: #BED757;}
+.lay_service ul li.li4 .front{background: #7397D0;}
+.lay_service ul li.li5 .front{background: #91ADBD;}
+.lay_service ul li.li6 .front{background: #EEE4BF;}
+.lay_service ul li .front img{float: left; margin: 50px 0 0 70px; display: block;}
+.lay_service ul li .front span{float: left; padding-left: 25px; font-size: 24px; line-height: 220px; color: #fff;}
+.lay_service ul li:hover .back{opacity: 1;}
+.lay_service ul li .back{border:1px solid #565656; width:388px; height:218px; background: #fff; overflow: hidden; position: relative; top:-220px; opacity: 0; border-radius:7px;}
+.lay_service ul li .back p{ padding:50px 30px 0 30px; line-height: 30px;}
+.lay_service ul li.li6 .front span{color: #565656;}

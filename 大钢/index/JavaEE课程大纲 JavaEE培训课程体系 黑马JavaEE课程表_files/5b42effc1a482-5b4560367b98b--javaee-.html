@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>专题页预约报名表单</title> 
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<link type="image/x-icon" rel="shortcut icon" href="http://baoming.itcast.cn/favicon.ico">
+<script src="5b42effc1a482-5b4560367b98b--javaee-_data/hm.js"></script><script>
+document.domain = "itcast.cn";
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9a061d9289552bf93e16fba43b9d9f41";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="text/javascript" src="5b42effc1a482-5b4560367b98b--javaee-_data/jquery-1.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("select[name='realsex']").html('<option value="男">男</option><option value="女">女</option>');
+	$("select[name='realxl']").html('<option value="大专">大专</option><option value="本科">本科</option><option value="研究生及以上">研究生及以上</option><option value="其他">其他</option>');
+	
+var schooloptions,schools,subject,subjecthtml,schoolshtml;
+	subject = JSON.parse(['{"python":"Python+\u4eba\u5de5\u667a\u80fd","c":"C\/C++","netmarket":"\u65b0\u5a92\u4f53+\u77ed\u89c6\u9891\u8fd0\u8425","test":"\u8f6f\u4ef6\u6d4b\u8bd5","javaee":"JavaEE","cloud":"\u5927\u6570\u636e","movies":"\u5f71\u89c6\u5236\u4f5c","robot":"\u667a\u80fd\u673a\u5668\u4eba\u8f6f\u4ef6\u5f00\u53d1","Linux":"Linux\u4e91\u8ba1\u7b97+\u8fd0\u7ef4\u5f00\u53d1","ui":"UI\/UE\u8bbe\u8ba1","web":"\u524d\u7aef\u4e0e\u79fb\u52a8\u5f00\u53d1","php":"PHP+H5\u5168\u6808\u5de5\u7a0b\u5e08","pm":"\u4ea7\u54c1\u7ecf\u7406"}']);
+	$.each( subject, function(i, n){
+		if( i == 'javaee' ){
+			subjecthtml = '<input type="hidden" name="realsubject" value="'+i+'" />'
+		}
+	});
+	$("select[name='realsubject']").remove();
+	$("#realsubmit").before(subjecthtml);
+	
+	schools = JSON.parse(['{"python":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","CHANGSHA":"\u957f\u6c99","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","CHENGDU":"\u6210\u90fd","WUHAN":"\u6b66\u6c49","XIAN":"\u897f\u5b89","ZHENGZHOU":"\u90d1\u5dde","NANJING":"\u5357\u4eac","BEIJING":"\u5317\u4eac"},"c":{"SHENZHEN":"\u6df1\u5733","SHANGHAI":"\u4e0a\u6d77","BEIJING":"\u5317\u4eac"},"netmarket":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","SHANGHAI":"\u4e0a\u6d77","BEIJING":"\u5317\u4eac"},"test":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","WUHAN":"\u6b66\u6c49","XIAN":"\u897f\u5b89","ZHENGZHOU":"\u90d1\u5dde","NANJING":"\u5357\u4eac","BEIJING":"\u5317\u4eac"},"javaee":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","SHIJIAZHUANG":"\u77f3\u5bb6\u5e84","TAIYUAN":"\u592a\u539f","CHENGDU":"\u6210\u90fd","WUHAN":"\u6b66\u6c49","CHONGQING":"\u91cd\u5e86","JINAN":"\u6d4e\u5357","SHENYANG":"\u6c88\u9633","XIAMEN":"\u53a6\u95e8","NANJING":"\u5357\u4eac","CHANGSHA":"\u957f\u6c99","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","XIAN":"\u897f\u5b89","ZHENGZHOU":"\u90d1\u5dde","HEFEI":"\u5408\u80a5","BEIJING":"\u5317\u4eac"},"cloud":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","WUHAN":"\u6b66\u6c49","XIAN":"\u897f\u5b89","ZHENGZHOU":"\u90d1\u5dde","BEIJING":"\u5317\u4eac"},"movies":{"BEIJING":"\u5317\u4eac"},"robot":{"SHENZHEN":"\u6df1\u5733","WUHAN":"\u6b66\u6c49"},"Linux":{"SHENZHEN":"\u6df1\u5733","BEIJING":"\u5317\u4eac"},"ui":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","CHANGSHA":"\u957f\u6c99","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","CHENGDU":"\u6210\u90fd","WUHAN":"\u6b66\u6c49","ZHENGZHOU":"\u90d1\u5dde","NANJING":"\u5357\u4eac","BEIJING":"\u5317\u4eac"},"web":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","CHENGDU":"\u6210\u90fd","WUHAN":"\u6b66\u6c49","CHONGQING":"\u91cd\u5e86","JINAN":"\u6d4e\u5357","NANJING":"\u5357\u4eac","CHANGSHA":"\u957f\u6c99","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","XIAN":"\u897f\u5b89","ZHENGZHOU":"\u90d1\u5dde","HEFEI":"\u5408\u80a5","BEIJING":"\u5317\u4eac"},"php":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","SHANGHAI":"\u4e0a\u6d77","WUHAN":"\u6b66\u6c49","BEIJING":"\u5317\u4eac"},"pm":{"SHENZHEN":"\u6df1\u5733","SHANGHAI":"\u4e0a\u6d77","BEIJING":"\u5317\u4eac"}}']);
+	schoolshtml = '<option value="0">请选择校区</option>';
+		schooloptions = schools['javaee'];
+		$.each( schooloptions, function(i, n){
+			schoolshtml += '<option value="'+i+'">'+n+'</option>'
+		});
+		$("select[name='realschool']").html(schoolshtml);
+	$("#realsubmit").click( function() {
+		$("#realsubmit").attr({ disabled: "disabled" });
+		var obj = $("form").serialize();
+		$.ajax({
+			type: "POST",
+			url: "/page/form",
+			data: obj,
+			success: function (message) {
+				if(message){$("#realsubmit").attr({ disabled: false });}
+				eval(message);
+			}
+		});
+	});			
+});
+</script>
+<meta name="realhash" content="7439a35996e1d98ac91002cd197f4a7a_542d4900228e9582634b4490f3db898b"></head>
+<body>
+<style>
+		*{margin: 0;padding: 0;}
+		li{list-style:none;}
+		input,textarea,select{outline: none;border: none;}
+		.bm_pf{width: 100%;height: 70px;background: #11263b;position: fixed;left: 0;bottom: 0;}
+		.bm_pf .bm_m{width: 1200px;height: 70px;margin: 0 auto;}
+		.bm_pf .bm_l{width: 319px;height: 100%;float: left;}
+		.bm_pf .bm_r{width: 865px;height: 100%;float: left;margin-left: 15px;}
+		.bm_pf .bm_r ul li{width: 153px;height: 35px;float: left;margin: 17px 7px 0 0;background: #fff;border-bottom: 4px #83b1c4 solid;}
+		.bm_pf .bm_r ul li img{float: left;margin: 8px 4px 0 4px;}
+		.bm_pf .bm_r ul li input{float: left;width: 118px;height: 20px;border-left: 2px #c6c6cb solid;margin-top: 8px;padding-left: 5px;}
+		.bm_pf .bm_r ul li select{float: left;width: 110px;height: 20px;margin: 8px 0 0 10px;padding: 0 4px;border: none;}
+		.bm_pf .bm_r .bm_btn{float: left;width: 135px;height: 32px;background: #f03838;border-radius: 18px;border-bottom: 4px #c31111 solid;font-size: 18px;color: #fff;text-align: center;line-height: 32px;margin: 17px 0 0 10px;text-decoration: none;}
+		.bm_pf .bm_r .bm_btn:hover{border-bottom: none;position: relative;top: 2px;}
+		.bm_pf .bm_r p{font-size: 14px;color: #fff;opacity: .66;float: left;margin: 17px 14px 0;line-height: 19px;}
+	</style>
+	<div class="bm_pf">
+		<div class="bm_m">
+			<div class="bm_l"><img src="5b42effc1a482-5b4560367b98b--javaee-_data/bmpic1.jpg"></div>
+			<div class="bm_r">
+			    <form>
+				<ul>
+					<li>
+						<img src="5b42effc1a482-5b4560367b98b--javaee-_data/bmpic2.jpg">
+						<input type="text" placeholder="请输入您的姓名" name="realname">
+					</li>
+					<li>
+						<img src="5b42effc1a482-5b4560367b98b--javaee-_data/bmpic3.jpg">
+						<input type="text" placeholder="请输入您的手机号" name="realphone">
+					</li>
+					<li style="width: 128px;">
+						<select name="realschool" title="请选择您的校区"><option value="0" selected="selected">请选择校区</option><option value="GUANGZHOU">广州</option><option value="SHENZHEN">深圳</option><option value="SHIJIAZHUANG">石家庄</option><option value="TAIYUAN">太原</option><option value="CHENGDU">成都</option><option value="WUHAN">武汉</option><option value="CHONGQING">重庆</option><option value="JINAN">济南</option><option value="SHENYANG">沈阳</option><option value="XIAMEN">厦门</option><option value="NANJING">南京</option><option value="CHANGSHA">长沙</option><option value="HANGZHOU">杭州</option><option value="SHANGHAI">上海</option><option value="XIAN">西安</option><option value="ZHENGZHOU">郑州</option><option value="HEFEI">合肥</option><option value="BEIJING">北京</option></select>
+						<!-- <img src="http://www.itcast.cn/images/bmpic4.jpg" > -->
+					</li>
+				</ul>
+				<input type="hidden" name="realsubject" value="javaee"><a href="javascript:;" class="bm_btn" id="realsubmit">立即占座</a>
+				<p>您的专属老师会在第一时间<br>与您取得联系,请保持手机畅通！</p>
+			    <input type="hidden" name="realhash" value="7439a35996e1d98ac91002cd197f4a7a_542d4900228e9582634b4490f3db898b"></form>
+			</div>
+		</div>
+	</div>
+</body></html>
